@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+div{
+    background-color:black;
+    height:100vh;
+    background-image: url("../../star-wars-spaceship-battle.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+}
+@keyframes pew {
+    0% {opacity:1;
+        transform: translate(0vw, 5px);
+    }
+    40% {
+        opacity:0;
+        transform: translate(calc(100vw - 5vw), 5px);
+    }
+    50% {
+        
+        transform: translate(calc(100vw - 5vw), 5px);
+    }
+    70%{
+        opacity:1;
+    }
+    90% {
+        opacity:0; 
+        transform: translate(0vw, 5px);
+        
+    }
+    100%{
+        opacity:0;
+        
+    }
+}
+@keyframes pew2 {
+    0% {
+        transform: rotate(-0deg)
+            translateX(30vmin ) rotate(090deg)
+            rotateX(180deg);
+    }
+    10% {
+        transform: rotate(360deg)
+            translateX(30vmin) rotate(090deg)
+            rotateX(180deg);
+    }
+    20% {
+        transform: rotate(-0deg)
+            translateX(30vmin ) rotate(090deg)
+            rotateX(180deg);
+    }
+    30% {
+        transform: rotate(360deg)
+            translateX(30vmin) rotate(090deg)
+            rotateX(180deg);
+    }
+    40% {
+        transform: rotate(-0deg)
+            translateX(30vmin ) rotate(090deg)
+            rotateX(180deg);
+    }
+    50% {
+        transform: rotate(360deg)
+            translateX(30vmin) rotate(090deg)
+            rotateX(180deg);
+    }
+    60% {
+        transform: rotate(-0deg)
+            translateX(30vmin ) rotate(090deg)
+            rotateX(180deg);
+            
+    }
+    70% {
+        transform: rotate(360deg)
+            translateX(30vmin) rotate(090deg)
+            rotateX(180deg);
+    }
+    80% {
+        transform: rotate(-0deg)
+            translateX(30vmin ) rotate(090deg)
+            rotateX(180deg);
+    }
+    90% {
+        transform: rotate(360deg)
+            translateX(30vmin) rotate(090deg)
+            rotateX(180deg);
+    }
+}         
+#laser{
+    font-size:6vh;
+    color:rgb(255,0,255);
+    animation:pew 8s infinite;
+    -webkit-animation: pew 3s infinite;
+    text-shadow: 3vh 3vh gold;
+}
+#laser1{
+    font-size:5vh;
+    color:rgb(255,0,255);
+    animation:pew 4s infinite;
+    animation-delay:1s;
+}
+#laser2{
+    font-size:4vh;
+    color:rgb(0, 255, 0);
+    animation:pew 4s infinite;
+    animation-delay:2s;
+}
+#laser3{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 5s infinite;
+    animation-delay:7s;
+}
+#laser4{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 5s infinite;
+    animation-delay:0.3s;
+}
+#laser5{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 3s infinite;
+    animation-delay:0.5s;
+}
+#laser6{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 8s infinite;
+    
+    animation-delay:4s;
+}
+#laser7{
+    font-size:4vh;
+    color:rgb(4, 0, 255);
+    animation:pew 3s infinite;
+    
+    animation-delay:3s;
+}
+#laser8{
+    font-size:50vh;
+    color:rgba(238, 255, 0, 0.37);
+    animation:pew2 7s infinite;
+    animation-delay:1.5s;
+}
+#laser9{
+    font-size:7vh;
+    color:rgb(255,0,255);
+    animation:pew 8s infinite;
+    -webkit-animation: pew 3s infinite;
+}
+#laser10{
+    font-size:5vh;
+    color:rgb(255,0,255);
+    animation:pew 8s infinite;
+    -webkit-animation: pew 3s infinite;
+    animation-delay:1s;
+}
+#laser11{
+    font-size:4vh;
+    color:rgb(0, 255, 0);
+    animation:pew 4s infinite;
+    -webkit-animation: pew 3s infinite;
+    animation-delay:2s;
+}
+#laser12{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 5s infinite;
+    -webkit-animation: pew 3s infinite;
+    animation-delay:3s;
+}
+#laser13{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 8s infinite;
+    -webkit-animation: pew 3s infinite;
+    animation-delay:0.3s;
+}
+#laser14{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 3s infinite;
+    animation-delay:0.5s;
+}
+#laser15{
+    font-size:3vh;
+    color:rgb(255,0,255);
+    animation:pew 8s infinite;
+    
+    animation-delay:3s;
+}
+@keyframes changeColor{
+    0%,100%{
+        color:blueviolet;
+    }
+    20%{
+        color:#fff;
+    }
+    40%{
+        color:rgb(255,0,255);
+    }
+    60%{
+        color:#fff
+    }
+    70%{
+        color:black;
+        text-shadow: 3vh 3vh rgba(255, 217, 0, 0.185);
+    }
+    80%{
+        color:rgb(0, 255, 0);
+        transform:scale(1.1)
+    }
+    90%{
+        color:rgba(243, 243, 243, 0.466);
+    }
+    
+}
+h1{
+    font-family:monospace;
+    letter-spacing:5vh;
+    font-size:10vh;
+    color:blueviolet;
+    text-align:center;
+    animation:changeColor 1s infinite;
+    padding-top:5%;
+}
+p{
+    font-size:7vh;
+    font-weight: bold;
+}
+
